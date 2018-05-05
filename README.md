@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/travis/kthjm/chin-plugin-favicons.svg?style=flat-square)](https://travis-ci.org/kthjm/chin-plugin-favicons)
 [![Coverage Status](https://img.shields.io/codecov/c/github/kthjm/chin-plugin-favicons.svg?style=flat-square)](https://codecov.io/github/kthjm/chin-plugin-favicons)
 
-[chin](https://github.com/kthjm/chin) plugin using [`favicons`](https://github.com/evilebottnawi/favicons).
+[chin](https://github.com/kthjm/chin) plugin using [favicons](https://github.com/evilebottnawi/favicons).
 
 ## Installation
 ```shell
