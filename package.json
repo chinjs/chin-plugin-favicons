@@ -1,0 +1,53 @@
+{
+  "name": "chin-plugin-favicons",
+  "version": "0.0.1",
+  "description": "Chin plugin using favicons.",
+  "keywords": [
+    "chin",
+    "chin-plugin",
+    "ico",
+    "favicon",
+    "generator",
+    "favicons",
+    "realfavicongenerator"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/kthjm/chin-plugin-favicons",
+  "author": "kthjm <toxictoxer@gmail.com>",
+  "license": "MIT",
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false,
+    "require": [
+      "babel-register"
+    ]
+  },
+  "scripts": {
+    "ex": "cross-env BABEL_ENV=EXAMPLE chin -c .example -r babel-register",
+    "test": "cross-env BABEL_ENV=TEST nyc mocha -t 15000",
+    "coverage": "nyc report --reporter=lcov && codecov"
+  },
+  "dependencies": {
+    "favicons": "^5.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-power-assert": "^2.0.0",
+    "babel-preset-react": "^6.24.1",
+    "chin": "^3.0.4",
+    "codecov": "^3.0.1",
+    "cross-env": "^5.1.4",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1",
+    "power-assert": "^1.5.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "rehype-format": "^2.2.0",
+    "rehype-parse": "^4.1.0",
+    "rehype-react": "^3.0.2",
+    "rehype-stringify": "^3.0.0",
+    "unified": "^6.2.0"
+  }
+}

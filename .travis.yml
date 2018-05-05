@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '8'
+cache:
+  yarn: true
+  directories:
+  - node_modules
+after_success:
+- yarn coverage
+deploy:
+  provider: npm
+  email: toxictoxer@gmail.com
+  on:
+    tags: true
+    repo: kthjm/chin-plugin-favicons
+    branch: publish
+  api_key:
+    secure: etL4znvMTzkP78XOYY+mw2V9AfcQ8p2FuBYZwF3z4oEibTAuCtADl+hQXwA3Ua8jLYz3NBbqJWTc4LtSPgFxiYYH2TTTzvYgnwV08IS1au3r33PUQp6MOdvdiTUgCHnQOQH2hurPB+bCjGmcS+ItcsqcV8Vd8bLe5pLYg6qPRK3YCFXKghIotuuGfVl4OEGEwLSfApzCop1yw1TNxvcsbyNysU12P55KWvONfHTRkBklgVfuMJu9DTlbRcJ8zRphoyRaYXSCLvTRm0GLkVozproo7CMMHDf1r9Ug4VyPVH3p9vNvoTYE81JnW3+mv+z2Kl3MU7kUEIOYOETYNGelKuxnhiQQtaH8DuDD7a9kPl5zKtNhKxlxijcBwH3OEUPrUhgd5HhDBnLdpjHxKwI/MGwjC3ljjZzJ4/+2ptPoXu8nKPagTtBEif1d9TJ+AY0kdNMv4LE4vcp0FXzl6eIcagx7PvHhb+gjdTUBIfRhhnW6aAjlwTelWa/MnjKGHcsUeZcpcsVGgNSg3YHraNnMx1+554TJ4+sLIAP8ton2sJwiiBjg4kEK3fDQVgZrtK1PVN6QeCKtt70o57B3c1xrlgmmejggcJZKxppBAzSIQ424437PHzAYyPFaK414dMFthr5RsQJQ7qC3R+WGrlsifR1zM3tPaAEVMRCWQ4GUpkQ=
