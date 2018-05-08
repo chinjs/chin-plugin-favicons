@@ -1,6 +1,10 @@
 {
   "name": "chin-plugin-favicons",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "repository": "https://github.com/kthjm/chin-plugin-favicons",
+  "author": "kthjm <toxictoxer@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
   "description": "Chin plugin using favicons.",
   "keywords": [
     "chin",
@@ -11,10 +15,6 @@
     "favicons",
     "realfavicongenerator"
   ],
-  "main": "index.js",
-  "repository": "https://github.com/kthjm/chin-plugin-favicons",
-  "author": "kthjm <toxictoxer@gmail.com>",
-  "license": "MIT",
   "nyc": {
     "sourceMap": false,
     "instrument": false,
@@ -36,7 +36,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-power-assert": "^2.0.0",
     "babel-preset-react": "^6.24.1",
-    "chin": "^3.0.4",
     "codecov": "^3.0.1",
     "cross-env": "^5.1.4",
     "mocha": "^5.1.1",
@@ -49,5 +48,8 @@
     "rehype-react": "^3.0.2",
     "rehype-stringify": "^3.0.0",
     "unified": "^6.2.0"
+  },
+  "peerDependencies": {
+    "chin": "^3.0.5"
   }
 }
