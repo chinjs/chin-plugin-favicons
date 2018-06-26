@@ -7,8 +7,8 @@ import { promisify } from 'util'
 const readFile = promisify(fs.readFile)
 
 const name = 'favicons'
-const readPromise = readFile(resolve(join('.example', 'put', `${name}.svg`)))
-const out = parseXbase(resolve(join('.example', 'out', `${name}.svg`)))
+const readPromise = readFile(resolve(join('.example', 'put', `${name}.png`)))
+const out = parseXbase(resolve(join('.example', 'out', `${name}.png`)))
 
 const test = (opts) => () => {
 
@@ -32,9 +32,22 @@ const test = (opts) => () => {
   )
 }
 
+const config = {
+  icons: {
+    favicons: true,
+    android: false,
+    appleIcon: false,
+    appleStartup: false,
+    coast: false,
+    firefox: false,
+    windows: false,
+    yandex: false
+  }
+}
+
 it('favicons()', test())
-it('favicons({ nameAsDir: false })', test({ nameAsDir: false }))
-it('favicons({ nameAsDir: true })', test({ nameAsDir: true }))
+it('favicons({ nameAsDir: false })', test({ config, nameAsDir: false }))
+it('favicons({ nameAsDir: true })', test({ config, nameAsDir: true }))
 
 function parseXbase(pathstring) {
   const { root, dir, name, ext } = parse(pathstring)

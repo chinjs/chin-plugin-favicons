@@ -8,16 +8,16 @@ const out = join(__dirname, 'out')
 
 const nameAsDir = true
 const config = { path: nameAsDir ? './favicons' : './' }
-const svg2fav = favicons({ nameAsDir, config })
+const png2fav = favicons({ nameAsDir, config })
 
 export default {
   put,
   out,
   clean: true,
-  processors: { svg: svg2fav },
+  processors: { png: png2fav },
   after: () => {
     const outpath = join(out, 'index.html')
-    const htmlTags = svg2fav.after()
+    const htmlTags = png2fav.after()
     const IndexHtml = generateHtml(htmlTags)
     return outputFile(outpath, IndexHtml)
   }
