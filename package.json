@@ -1,7 +1,7 @@
 {
   "name": "chin-plugin-favicons",
-  "version": "0.0.2",
-  "repository": "https://github.com/kthjm/chin-plugin-favicons",
+  "version": "0.0.3",
+  "repository": "https://github.com/chinjs/chin-plugin-favicons",
   "author": "kthjm <toxictoxer@gmail.com>",
   "main": "index.js",
   "license": "MIT",
