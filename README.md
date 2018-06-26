@@ -1,11 +1,11 @@
 # chin-plugin-favicons
 
-[![npm](https://img.shields.io/npm/v/chin-plugin-favicons.svg?style=flat-square)](https://www.npmjs.com/package/chin-plugin-favicons)
-[![npm](https://img.shields.io/npm/dm/chin-plugin-favicons.svg?style=flat-square)](https://www.npmjs.com/package/chin-plugin-favicons)
-[![Build Status](https://img.shields.io/travis/kthjm/chin-plugin-favicons.svg?style=flat-square)](https://travis-ci.org/kthjm/chin-plugin-favicons)
-[![Coverage Status](https://img.shields.io/codecov/c/github/kthjm/chin-plugin-favicons.svg?style=flat-square)](https://codecov.io/github/kthjm/chin-plugin-favicons)
+[![npm](https://img.shields.io/npm/v/chin-plugin-favicons.svg?longCache=true&style=flat-square)](https://www.npmjs.com/package/chin-plugin-favicons)
+[![npm](https://img.shields.io/npm/dm/chin-plugin-favicons.svg?longCache=true&style=flat-square)](https://www.npmjs.com/package/chin-plugin-favicons)
+[![Build Status](https://img.shields.io/travis/chinjs/chin-plugin-favicons.svg?longCache=true&style=flat-square)](https://travis-ci.org/chinjs/chin-plugin-favicons)
+[![Coverage Status](https://img.shields.io/codecov/c/github/chinjs/chin-plugin-favicons.svg?longCache=true&style=flat-square)](https://codecov.io/github/chinjs/chin-plugin-favicons)
 
-[chin](https://github.com/kthjm/chin) plugin using [favicons](https://github.com/evilebottnawi/favicons).
+[chin](https://github.com/chinjs/chin) plugin using [favicons](https://github.com/evilebottnawi/favicons).
 
 ## Installation
 ```shell
